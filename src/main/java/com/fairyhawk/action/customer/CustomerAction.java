@@ -11,11 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import com.fairyhawk.common.action.CommonAction;
 import com.fairyhawk.common.entity.JsonEntity;
+import com.fairyhawk.common.util.Threads;
 import com.fairyhawk.entity.customer.Customer;
 import com.fairyhawk.entity.customer.CustomerQueryCondition;
 import com.fairyhawk.service.customer.ICustomerService;
 import com.fairyhawk.service.mq.NotifyMessageProducer;
-import com.fairyhawk.test.Threads;
 /**
  * 
  * @ClassName  CustomerAction
