@@ -323,6 +323,10 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
    <!-- 本项目数据dao -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     	 <property name="configLocation"  value="classpath:SqlMapConfig.xml"/>
+    	 <property name="mappingLocations">
+        	<value>classpath*:/config/mybatis/**/*Mapper.xml</value>
+        </property>
+        
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
