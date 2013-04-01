@@ -90,5 +90,10 @@
 				<param name="root">json</param>
 			</result>
         </action>
+        <!-- sys/User/test
+        <action name="sys/*/*" method="{2}" class="com.fairyhawk.action.sys.{1}Action">
+			<result name="*" type="direct">common</result>
+	</action>
+	-->
     </package>
 </struts>
