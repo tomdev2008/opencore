@@ -35,7 +35,7 @@
   </filter-mapping>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:applicationContext.xml</param-value>
+    <param-value>classpath:applicationContext.xml,classpath*:config/spring/*.xml</param-value>
   </context-param>
   <listener>
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
